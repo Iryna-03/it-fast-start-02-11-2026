@@ -3,3 +3,52 @@
     padding: 0;
     box-sizing: border-box
 }
+body {
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+/* Велика таблиця, в якій лежать 4 місяці */
+table.year {
+    margin: 0 auto;
+    border: 2px solid gray;
+    border-collapse: collapse;
+    border-spacing: 2px;
+}
+
+table.year > tbody > tr > td {
+    border: 1px solid gray;
+    vertical-align: top;
+    padding: 2px;
+}
+
+/* Маленька таблиця одного місяця */
+table.month {
+    border: 1px solid gray;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+table.month caption {
+    font-size: 20px;
+    padding: 4px;
+}
+
+table.month th,
+table.month td {
+    text-align: center;
+    padding: 4px 8px;
+    min-width: 28px;
+}
+
+/* Жовта колонка "№ тижня" */
+table.month .week {
+    background-color: yellow;
+}
+table.month td.next-month { color: #b0b0b0;/* блідно-сірий*/
+    }
