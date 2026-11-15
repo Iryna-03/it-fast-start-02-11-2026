@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,59 @@
     <header></header>
     <main>
         <section>
-            <h1>Homework #_</h1>
+            <h1>Проста форма-анкета</h1>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Заповніть ваші дані</legend>
+                    <p>
+                        <label for="first-name">Ваше ім'я:</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="Введіть своє ім'я">
+                    </p>
+                    <p>
+                        <label for="last-name">Ваше прізвище:</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Введіть своє прізвище">
+                    </p>
+                    <p>
+                        <label for="email">Електронна пошта:</label>
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </p>
+                    <p>
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Номер телефону">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Данні про ваш курс</legend>
+                    <p>
+                        <label for="course">Оберіть ваш курс</label>
+                        <select id="course" name="course">
+                            <option value="" selected disabled>Оберіть ваш курс</option>
+                            <option value="front-end-basic">Front-end Basic</option>
+                            <option value="front-end-pro">Front-end Pro</option>
+                            <option value="react-js">React JS</option>
+                            <option value="node-js">Node JS</option>
+                        </select>
+                    </p>
+                    <p>
+                        Чи виконуєте ви домашнє завдання?<br>
+                        <label><input type="radio" name="homework" value="yes"> Так, виконую</label><br>
+                        <label><input type="radio" name="homework" value="no"> Ні, не встигаю</label>
+                    </p>
+                    <p>
+                        Додаткова інформація:<br>
+                        <label><input type="checkbox" name="continue" value="continue"> Буду продовжувати навчання</label><br>
+                        <label><input type="checkbox" name="english" value="english"> Додатково вивчаю англійську мову</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <textarea name="comment" rows="3" placeholder="Comment"></textarea>
+                </p>
+                <p>
+                    <button type="submit">Зберегти відповідь</button>
+                </p>
+            </form>
         </section>
     </main>
     <footer></footer>
