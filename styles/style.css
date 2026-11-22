@@ -3,3 +3,69 @@
     padding: 0;
     box-sizing: border-box
 }
+body {
+    font-family: Roboto, Arial, sans-serif;
+    text-align: center;
+    color: #909090;
+    padding-bottom: 40px;
+}
+
+h1,
+h2,
+h3 {
+    color: #222;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 24px 0 36px;
+}
+
+.card {
+    width: 400px;
+    padding: 16px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0 30px #32326440;
+}
+
+.card-photo {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-name {
+    font-size: 20px;
+    margin: 12px 0 8px;
+}
+
+.card-role {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.card-text {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 12px;
+}
+
+.card-footer {
+    border-top: 1px solid #bbb;
+    padding-top: 14px;
+    text-align: right;
+}
+
+.card-link {
+    font-size: 16px;
+    color: #5d5dff;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
